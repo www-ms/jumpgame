@@ -1,0 +1,62 @@
+/* @font-face {
+    font-family: roboto;
+    src: url(RobotoR.ttf);
+} */
+*{
+    /* font-family: roboto; */
+    margin: 0;
+    padding: 0;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: auto;
+}
+#score{
+    position: relative;
+    float: left;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: brown;
+    position: relative;
+    top: 150px;
+}
+.animation{
+    animation: jump .6s;
+}
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: darkcyan;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 2s infinite;
+}
+@keyframes block {
+    0%{left: 480px;}
+    100%{left: -180px;}
+}
+#block2{
+    width: 20px;
+    height: 30px;
+    background-color: darkcyan;
+    position: relative;
+    top: 100px;
+    left: 480px;
+    animation: block2 3s infinite;
+}
+@keyframes block2 {
+    0%{left: 580px;}
+    100%{left: -180px;}
+}
